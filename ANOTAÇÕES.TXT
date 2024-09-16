@@ -1,0 +1,22 @@
+################################################
+NOME DO BANCO DE DADOS: esquadriaDB			   #
+BANCO DE DADOS: PostgreSQL					   #
+											   #
+usuario: postegres							   #
+senha: root									   #
+################################################
+
+FUNCIONA TAMBÉM COM BANCO DE DADOS SQLITE
+
+################################################
+
+COMANDO PARA CONVERTER ARQUIVOS UI DO QTDESIGNER PARA ARQUIVOS PYTHON
+
+DIGITAR ESTE CODIGO NO CMD ESTANDO NA PASTA ONDE ESTÁ O ARQUIVO .UI
+VERIFICAR A VERSÃO DO PYQT VERSÃO 5 OU 6 ALTERAR NO CODIGO ABAIXO pyuic5 OU pyuic6
+
+pyuic6 -x <nome do arquivo.ui> -o <nome do arquivo.py>
+
+################################################
+
+executar o arquivo main.py para testar
