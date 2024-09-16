@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1519</width>
+    <height>940</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>.:: PERFILARE ::. - Meu Principal</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget_menu_principal">
+   <widget class="QGroupBox" name="groupBox_linha_modular">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>561</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>LINHA MODULAR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QPushButton" name="pushButton_vitro_modular_2f">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>240</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(20, 100, 180, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>VITRO 2 FOLHAS - LINHA MODULAR</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_vitro_modular_4f">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>240</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(20, 100, 180, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>VITRO 4 FOLHAS - LINHA MODULAR</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_veneziana_modular_3f">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>30</y>
+       <width>260</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(20, 100, 180, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>VENEZIANA 3 FOLHAS - LINHA MODULAR</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_veneziana_modular_6f">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>90</y>
+       <width>260</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(20, 100, 180, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>VENEZIANA 6 FOLHAS - LINHA MODULAR</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_vitro_linha_25">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>20</y>
+      <width>901</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>VITROS LINHA 25</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QPushButton" name="pushButton_vitro_linha25_2f">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>260</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 220, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>VITRO 2 FOLHAS - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_vitro_linha25_4f">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>260</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 220, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>VITRO 4 FOLHAS - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_veneziana_linha25_3f">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>30</y>
+       <width>260</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 220, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>VENEZIANA 3 FOLHAS - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_veneziana_linha25_6f">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>90</y>
+       <width>260</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 220, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>VENEZIANA 6 FOLHAS - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_vitro_linha25_2f_2">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>30</y>
+       <width>260</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 220, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>VITRO TRAVESSA 2 FOLHAS - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_veneziana_linha25_3f_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>260</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 220, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>VITRO 3 PLANOS - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_vitro_linha25_4f_2">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>90</y>
+       <width>260</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 220, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>VITRO TRAVESSA 4 FOLHAS - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_veneziana_linha25_6f_2">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>150</y>
+       <width>260</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 220, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>VITRO TRAVESSA 3 PLANOS - LINHA 25</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_porta_balcao_linha25">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>280</y>
+      <width>401</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>PORTA BALCÃO - LINHA 25</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QPushButton" name="pushButton_pt_balcao_2f_linha25">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 153, 204, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA BALCÃO 2 FOLHAS - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_balcao_travessa_2f_linha25">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 153, 204, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA BALCÃO TRAVESSA 2 FOLHAS - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_balcao_4f_linha25">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 153, 204, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA BALCÃO 4 FOLHAS - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_balcao_travessa_4f_linha25">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>210</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 153, 204, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA BALCÃO TRAVESSA 4 FOLHAS - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_balcao_venez_3f_linha25">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>390</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 153, 204, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA BALCÃO VENEZIANA 3 FOLHAS - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_balcao_3planos_linha25">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>270</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 153, 204, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA BALCÃO 3 PLANOS - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_balcao_venez_6f_linha25">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>450</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 153, 204, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA BALCÃO VENEZIANA 6 FOLHAS  - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_balcao_3planos_travessa_linha25">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>330</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 153, 204, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA BALCÃO TRAVESSA 3 PLANOS - LINHA 25</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_balc_3planos_vdint_linha25">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>510</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 153, 204, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA BALCÃO VIDRO INTEIRO 3 PLANOS - LINHA 25</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_linha14_max_basc">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>561</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>LINHA 14</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QPushButton" name="pushButton_basculante_linha14">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>240</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 153, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>BASCULANTE - LINHA 14</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_maximar_linha14">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>30</y>
+       <width>240</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 153, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>MAXIM-AR - LINHA 14</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_porta_giro">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>391</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>PORTAS DE GIRO</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QPushButton" name="pushButton_pt_giro_palheta">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>350</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(238, 120, 17, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA DE GIRO - COM PALHETAS</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_giro_social_pl">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>350</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(238, 120, 17, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA DE GIRO - SOCIAL COM POSTIGO(PALHETAS)</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_gio_social_lb">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>210</y>
+       <width>350</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(238, 120, 17, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA DE GIRO - SOCIAL COM POSTIGO(LAMBRIL)</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_giro_basculante_lb">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>270</y>
+       <width>350</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(238, 120, 17, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA DE GIRO - COM BASCULANTES (LAMBRIL)</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_giro_lb_puxador_friso">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>450</y>
+       <width>350</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(238, 120, 17, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA DE GIRO - LAMBRIL PUXADOR E FRISO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_giro_lb_macaneta">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>330</y>
+       <width>350</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(238, 120, 17, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA DE GIRO - LAMBRIL COM MAÇANETA</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_giro_lb_puxador_vidro">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>510</y>
+       <width>350</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(238, 120, 17, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA DE GIRO - LAMBRIL PUXADOR E VIDRO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_giro_lb_puxador">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>390</y>
+       <width>350</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(238, 120, 17, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA DE GIRO - LAMBRIL COM PUXADOR</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_giro_basculante_pl">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>350</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(238, 120, 17, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA DE GIRO - COM BASCULANTES (PALHETAS)</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_giro_lb_puxador_vidro_friso">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>570</y>
+       <width>350</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(238, 120, 17, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA DE GIRO - LAMBRIL PUXADOR VIDRO E FRISO</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_porta_pivotante">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>280</y>
+      <width>401</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>PORTAS PIVOTANTES</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QPushButton" name="pushButton_pt_piv_lb_puxador">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(215, 15, 15, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA PIVOTANTE COM LAMBRIL E PUXADOR</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_piv_lb_puxador_friso">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(215, 15, 15, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA PIVOTANTE COM LAMBRIL PUXADOR E FRISO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_piv_lb_puxador_vidro">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(215, 15, 15, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA PIVOTANTE COM LAMBRIL PUXADOR E VIDRO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_pt_piv_lb_puxador_friso_vidro">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>210</y>
+       <width>360</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(215, 15, 15, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>PORTA PIVOTANTE COM LAMBRIL PUXADO FRISO E VIDRO</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -982,12 +982,17 @@
     </row>
     <column>
      <property name="text">
-      <string>coluna 1</string>
+      <string>Código</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>coluna 2</string>
+      <string>Descrição</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Quantidade</string>
      </property>
     </column>
    </widget>
