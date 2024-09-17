@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>MainWindow_menu_produtos</class>
+ <widget class="QMainWindow" name="MainWindow_menu_produtos">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>1519</width>
-    <height>940</height>
+    <height>899</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>.:: PERFILARE ::. - Meu Principal</string>
+   <string>.:: PERFILARE ::. - Meu de Produtos</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(0, 0, 0);</string>
