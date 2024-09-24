@@ -1,5 +1,4 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow
-#from controle.controle_menu_principal import ControleMenuPrincipal
 from controle.controle_principal import ControlePrincipal
 from view.tela_login import Ui_MainWindow_login
 from model.model_login import ModelLogin

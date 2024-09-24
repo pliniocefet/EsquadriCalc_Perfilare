@@ -1,7 +1,7 @@
 import sqlite3
 
 
-class ModelCliente():
+class ModelVendedor():
 
     def __init__(self):
         self.connection = sqlite3.connect("esquadriaDB.db")
@@ -9,37 +9,27 @@ class ModelCliente():
         
         self.return_query = None
 
-    def create_table_cliente(self):
+    def create_table_vendedor(self):
         self.connection = sqlite3.connect("esquadriaDB.db")
-        self.cursor.execute("""CREATE TABLE IF NOT EXISTS clientes (
+        self.cursor.execute("""CREATE TABLE IF NOT EXISTS vendedores (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             nome TEXT NOT NULL,
-            endereco TEXT,
-            numero TEXT,
-            bairro TEXT,
-            cidade TEXT,
-            telefone TEXT NOT NULL,
-            observacoes TEXT)""")
+            telefone TEXT NOT NULL)""")
 
         self.connection.commit()
         self.connection.close()
         
     
-    def insert_cliente(self, nome, endereco, numero, bairro, cidade, telefone, observacoes):
+    def insert_vendedor(self, nome, telefone):
         self.connection = sqlite3.connect("esquadriaDB.db")
         
         try:
             self.cursor = self.connection.cursor()
 
             self.cursor.execute("""
-                                INSERT INTO clientes (
+                                INSERT INTO vendedores (
                                     nome,
-                                    endereco,
-                                    numero,
-                                    bairro,
-                                    cidade,
-                                    telefone,
-                                    observacoes) VALUES (?,?,?,?,?,?,?)""", (nome, endereco, numero, bairro, cidade, telefone, observacoes))
+                                    telefone) VALUES (?,?)""", (nome, telefone))
             
             self.connection.commit()
             print("Registro inserido com sucesso!")
@@ -54,16 +44,16 @@ class ModelCliente():
                 print("Conexão encerrada")
     
     
-    def update_cliente(self, id, nome, endereco, numero, bairro, cidade, telefone, observacoes):
+    def update_vendedor(self, id, nome, telefone):
         pass
     
     
-    def delete_cliente(self, id):
+    def delete_vendedor(self, id):
         self.connection = sqlite3.connect("esquadriaDB.db")
         
         try:
             self.cursor = self.connection.cursor()
-            self.cursor.execute("DELETE FROM clientes WHERE id=?", id)
+            self.cursor.execute("DELETE FROM vendedores WHERE id=?", id)
             
             self.connection.commit()
             print("Registro excluido com sucesso!")
@@ -78,22 +68,22 @@ class ModelCliente():
                 print("Conexão encerrada")
     
     
-    def list_clientes(self):
+    def list_vendedores(self):
         self.connection = sqlite3.connect("esquadriaDB.db")
         self.cursor = self.connection.cursor()
         
-        self.cursor.execute("""SELECT * FROM clientes""")
+        self.cursor.execute("""SELECT * FROM vendedores""")
         
         self.return_query = self.cursor.fetchall()
         
         return self.return_query
     
     
-    def find_cliente(self, cliente):
+    def find_vendedor(self, nome_vendedor):
         self.connection = sqlite3.connect("esquadriaDB.db")
         self.cursor = self.connection.cursor()
         
-        self.cursor.execute("""SELECT * FROM clientes WHERE cliente=?""", cliente)
+        self.cursor.execute("""SELECT * FROM vendedores WHERE nome=?""", nome_vendedor)
         
         self.return_query = self.cursor.fetchone()
         

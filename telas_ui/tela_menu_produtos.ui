@@ -14,7 +14,7 @@
    <string>.:: PERFILARE ::. - Meu de Produtos</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(0, 0, 0);</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget_menu_principal">
    <widget class="QGroupBox" name="groupBox_linha_modular">
@@ -32,7 +32,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true"/>
     </property>
     <property name="title">
      <string>LINHA MODULAR</string>
@@ -154,7 +154,7 @@ border-radius: 20px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true"/>
     </property>
     <property name="title">
      <string>VITROS LINHA 25</string>
@@ -368,7 +368,7 @@ border-radius: 20px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true"/>
     </property>
     <property name="title">
      <string>PORTA BALCÃO - LINHA 25</string>
@@ -605,7 +605,7 @@ border-radius: 20px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true"/>
     </property>
     <property name="title">
      <string>LINHA 14</string>
@@ -681,7 +681,7 @@ border-radius: 20px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true"/>
     </property>
     <property name="title">
      <string>PORTAS DE GIRO</string>
@@ -941,7 +941,7 @@ border-radius: 20px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true"/>
     </property>
     <property name="title">
      <string>PORTAS PIVOTANTES</string>

@@ -1,0 +1,11 @@
+CRIAR O MODULO model_vendedor
+
+CRIAR O MODULO controle_vendedor
+
+CRIAR EM controle_novo_orcamento UM METODO PARA ALIMENTAR O COMBOBOX DE VENDEDORES
+
+CRIAR EM model_cliente O METODO update_cliente() PARA PODER ALTERAR CLIENTES E SALVAR NO BANCO AS ALTERAÇÕES
+
+CRIAR EM model_vendedor O METODO update_vendedor() PARA PODER ALTERAR VENDEDORES E SALVAR NO BANCO AS ALTERAÇÕES
+
+## buscar uma extensão para coloca TODO (para marcar tarefas a serem realizadas) em arquivos Python
