@@ -5,6 +5,7 @@ from controle.controle_cadastro_perfil import ControleCadastroPerfil
 from controle.controle_cadastro_acessorio import ControleCadastroAcessorio
 from controle.controle_cadastro_cliente import ControleCadastroCliente
 from controle.controle_pesquisar_orcamento import ControlePesquisarOrcamento
+from controle.controle_cadastro_vendedor import ControleCadastroVendedor
 
 
 class ControlePrincipal(QMainWindow):
@@ -27,6 +28,9 @@ class ControlePrincipal(QMainWindow):
 
         # INSTÂNCIA DO MENU CADASTRO - CADASTRO DE CLIENTES
         self.cadastro_cliente = ControleCadastroCliente()
+        
+        # INSTÂNCIA DO MENU CADASTRO - CADASTRO DE VENDEDORES
+        self.cadastro_vendedor = ControleCadastroVendedor()
 
         # INSTÂNCIA DO MENU CADASTRO - CADASTRO DE PERFIL
         self.cadastro_perfil = ControleCadastroPerfil()
@@ -53,7 +57,14 @@ class ControlePrincipal(QMainWindow):
         # CHAMA A TELA DE CADASTRO DE CLIENTES
         self.tela_principal.actionCadastro_de_Clientes.triggered.connect(
             self.menu_cadastro_cliente)
+        
+        # CHAMA A TELA DE CADASTRO DE VENDEDORES
+        self.tela_principal.actionCadastro_de_Vendedores.triggered.connect(
+            self.menu_cadastro_vendedor)
 
+        # CHAMA A TELA DE CADASTRO DE PERFIL
+        self.tela_principal.actionCadastro_de_Aluminios.triggered.connect(
+            self.menu_cadastro_perfil)
         # CHAMA A TELA DE CADASTRO DE PERFIL
         self.tela_principal.actionCadastro_de_Aluminios.triggered.connect(
             self.menu_cadastro_perfil)
@@ -73,6 +84,9 @@ class ControlePrincipal(QMainWindow):
 
     def menu_cadastro_cliente(self):
         self.cadastro_cliente.show()
+        
+    def menu_cadastro_vendedor(self):
+        self.cadastro_vendedor.show()
 
     def menu_cadastro_acessorio(self):
         self.cadastro_acessorio.show()
