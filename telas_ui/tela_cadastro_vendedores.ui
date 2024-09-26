@@ -103,6 +103,9 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::TabFocus</enum>
+    </property>
     <property name="toolTip">
      <string>Telefone para contato</string>
     </property>
@@ -252,11 +255,17 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
     <property name="toolTip">
      <string>Nome do Cliente</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_endereco_vendedor">
@@ -268,11 +277,17 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
     <property name="toolTip">
      <string>Endereço da Obra ou do Cliente</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
     </property>
    </widget>
    <widget class="QLabel" name="label_observacoes">

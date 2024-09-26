@@ -2,6 +2,7 @@ from PyQt5.QtWidgets import QMainWindow, QMessageBox
 from view.tela_novo_orcamento import Ui_tela_novo_orcamento
 from controle.controle_buscar_cliente import ControleBuscarCliente
 from model.model_cliente import ModelCliente
+from model.model_vendedor import ModelVendedor
 
 
 class ControleNovoOrcamento(QMainWindow):  
@@ -13,6 +14,9 @@ class ControleNovoOrcamento(QMainWindow):
         super().__init__()
         self.novo_orcamento = Ui_tela_novo_orcamento()
         self.novo_orcamento.setupUi(self)
+        
+        ### VARIAVEIS UTILITÁRIAS
+        self.combo_vendedores = None
         
         ### ESTADO DOS BOTÕES ###
         self.novo_orcamento.pushButton_editar_cliente.setEnabled(False)
@@ -31,8 +35,12 @@ class ControleNovoOrcamento(QMainWindow):
 
     
     def preenche_combo_vendedores(self):
-        pass
-    
+        self.vendedor = ModelVendedor()
+        self.combo_vendedores = self.vendedor.list_vendedores()
+        
+        ### Preenche o comboBox de vendedores com as informações do banco de dados
+        for vendedor in self.combo_vendedores:
+            self.novo_orcamento.comboBox_vendedores.addItem(vendedor[1])
 
     def buscar_cliente(self):
         self.chama_buscar_cliente = ControleBuscarCliente()

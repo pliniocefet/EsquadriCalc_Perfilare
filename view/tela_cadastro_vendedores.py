@@ -128,11 +128,11 @@ class Ui_tela_cadastro_vendedor(object):
         self.lineEdit_numero_vendedor.setToolTip(_translate("tela_cadastro_vendedor", "Numero da Obra"))
 
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    tela_cadastro_vendedor = QtWidgets.QMainWindow()
-    ui = Ui_tela_cadastro_vendedor()
-    ui.setupUi(tela_cadastro_vendedor)
-    tela_cadastro_vendedor.show()
-    sys.exit(app.exec_())
+# if __name__ == "__main__":
+#     import sys
+#     app = QtWidgets.QApplication(sys.argv)
+#     tela_cadastro_vendedor = QtWidgets.QMainWindow()
+#     ui = Ui_tela_cadastro_vendedor()
+#     ui.setupUi(tela_cadastro_vendedor)
+#     tela_cadastro_vendedor.show()
+#     sys.exit(app.exec_())

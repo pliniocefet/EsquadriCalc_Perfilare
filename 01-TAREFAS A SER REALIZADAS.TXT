@@ -1,8 +1,6 @@
 
 
-IMPLEMENTAR O MODULO controle_vendedor
-
-
+TODO IMPLEMENTAR O MODULO controle_cadastro_vendedor
 
 TODO CRIAR EM controle_novo_orcamento UM METODO PARA ALIMENTAR O COMBOBOX DE VENDEDORES
 
