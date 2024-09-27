@@ -102,10 +102,7 @@ class Perfil:
         linha = self.combobox_linha_perfil.get()
         comprimento = self.entry_comprimento_perfil.get()
         
-       
-        """
-        TODO CRIAR UMA FUNCAO QUE TROQUE A VIRGULA POR PONTO, PRINCIPALMENTE NO CAMPO KG_METRO
-        """ 
+    
         
         self.conexao.inserted_values = (codigo, descricao, kg_metro, linha, comprimento)
         

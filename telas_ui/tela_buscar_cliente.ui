@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>655</width>
+    <width>757</width>
     <height>315</height>
    </rect>
   </property>
@@ -60,10 +60,15 @@
      <rect>
       <x>20</x>
       <y>70</y>
-      <width>611</width>
+      <width>711</width>
       <height>192</height>
      </rect>
     </property>
+    <column>
+     <property name="text">
+      <string>Id</string>
+     </property>
+    </column>
     <column>
      <property name="text">
       <string>Nome</string>
@@ -94,6 +99,11 @@
       <string>Telefone</string>
      </property>
     </column>
+    <column>
+     <property name="text">
+      <string>Observaçoes</string>
+     </property>
+    </column>
    </widget>
    <widget class="QPushButton" name="pushButton_inserir_cliente">
     <property name="geometry">
@@ -111,7 +121,7 @@
    <widget class="QPushButton" name="pushButton_fechar">
     <property name="geometry">
      <rect>
-      <x>550</x>
+      <x>660</x>
       <y>280</y>
       <width>75</width>
       <height>23</height>

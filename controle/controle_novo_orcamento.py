@@ -2,6 +2,7 @@ from PyQt5.QtWidgets import QMainWindow, QMessageBox
 from view.tela_novo_orcamento import Ui_tela_novo_orcamento
 from controle.controle_buscar_cliente import ControleBuscarCliente
 from model.model_cliente import ModelCliente
+from model.model_vendedor import ModelVendedor
 
 
 class ControleNovoOrcamento(QMainWindow):  
@@ -13,6 +14,9 @@ class ControleNovoOrcamento(QMainWindow):
         super().__init__()
         self.novo_orcamento = Ui_tela_novo_orcamento()
         self.novo_orcamento.setupUi(self)
+        
+        ### VARIAVEIS UTILITÁRIAS
+        self.combo_vendedores = None
         
         ### ESTADO DOS BOTÕES ###
         self.novo_orcamento.pushButton_editar_cliente.setEnabled(False)
@@ -28,11 +32,21 @@ class ControleNovoOrcamento(QMainWindow):
         self.novo_orcamento.pushButton_salvar_cliente.clicked.connect(
             self.salvar_cliente)
         self.novo_orcamento.pushButton_editar_cliente.clicked.connect(self.editar_cliente)
-
-    
+        
+        ### Condição de funcionamento dos botões
+        if self.novo_orcamento.lineEdit_nome_cliente.text() == "":
+            self.novo_orcamento.pushButton_incluir_produto.setEnabled(False)
+        else:
+            self.novo_orcamento.pushButton_incluir_produto.setEnabled(True)
+            
+            
     def preenche_combo_vendedores(self):
-        pass
-    
+        self.vendedor = ModelVendedor()
+        self.combo_vendedores = self.vendedor.list_vendedores()
+        
+        ### Preenche o comboBox de vendedores com as informações do banco de dados
+        for vendedor in self.combo_vendedores:
+            self.novo_orcamento.comboBox_vendedores.addItem(vendedor[1])
 
     def buscar_cliente(self):
         self.chama_buscar_cliente = ControleBuscarCliente()
@@ -46,10 +60,10 @@ class ControleNovoOrcamento(QMainWindow):
         self.novo_orcamento.lineEdit_cidade_cliente.clear()
         self.novo_orcamento.lineEdit_telefone_cliente.clear()
         self.novo_orcamento.textEdit_observacoes.clear()
+        self.novo_orcamento.pushButton_salvar_cliente.setEnabled(True)
         self.close()
 
     def salvar_cliente(self):
-        self.modelCliente = ModelCliente()
         nome_cliente = self.novo_orcamento.lineEdit_nome_cliente.text()
         endereco_cliente = self.novo_orcamento.lineEdit_endereco_cliente.text()
         numero_cliente = self.novo_orcamento.lineEdit_numero_cliente.text()
@@ -57,24 +71,28 @@ class ControleNovoOrcamento(QMainWindow):
         cidade_cliente = self.novo_orcamento.lineEdit_cidade_cliente.text()
         telefone_cliente = self.novo_orcamento.lineEdit_telefone_cliente.text()
         observacoes_cliente = self.novo_orcamento.textEdit_observacoes.toPlainText()
+        
+#       TODO FAZER UMA VERIFICAÇÃO PARA NÃO SALVAR CLIENTES EM BRANCO
 
+
+        self.modelCliente = ModelCliente()
         self.modelCliente.insert_cliente(nome_cliente, endereco_cliente, numero_cliente,
                                          bairro_cliente, cidade_cliente, telefone_cliente, observacoes_cliente)
         
-        self.menssagem()
+        self.menssagem('Cadastro Realizado com Sucesso!')
         self.novo_orcamento.pushButton_salvar_cliente.setEnabled(False)
         self.novo_orcamento.pushButton_editar_cliente.setEnabled(True)
-        
+        self.novo_orcamento.pushButton_incluir_produto.setEnabled(True)
         
     def editar_cliente(self):
         self.novo_orcamento.pushButton_salvar_cliente.setEnabled(True)
         self.novo_orcamento.pushButton_editar_cliente.setEnabled(False)
         
     ### MESSAGEBOX ###
-    def menssagem(self):    
+    def menssagem(self, menssagem):    
         self.msg_box = QMessageBox()
         self.msg_box.setWindowTitle('Information')
-        self.msg_box.setText('Cadastro Realizado com Sucesso')
+        self.msg_box.setText(menssagem)
         self.msg_box.setIcon(QMessageBox.Information)
         self.msg_box.setStandardButtons(QMessageBox.Ok)
         self.msg_box.exec_()

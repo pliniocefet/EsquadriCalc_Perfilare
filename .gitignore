@@ -2,3 +2,8 @@ vcs.xml
 EsquadriCalcTeste.iml
 misc.xml
 workspace.xml
+__pycache__
+ARQUIVOS JA CONVERTIDOS PARA PYQT5
+.vscode
+.idea
+01_SQL.pgerd

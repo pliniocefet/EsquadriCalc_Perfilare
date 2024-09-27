@@ -300,46 +300,6 @@
         <string>Selecione o vendedor</string>
        </property>
       </item>
-      <item>
-       <property name="text">
-        <string>André</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Joaquim</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Jefferson</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Thais</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Merlim</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Plinio</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Natanael</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Wagner</string>
-       </property>
-      </item>
      </widget>
      <widget class="QLineEdit" name="lineEdit_numero_cliente">
       <property name="geometry">

@@ -238,6 +238,7 @@
      <string>Cadastro</string>
     </property>
     <addaction name="actionCadastro_de_Clientes"/>
+    <addaction name="actionCadastro_de_Vendedores"/>
     <addaction name="actionCadastro_de_Aluminios"/>
     <addaction name="actionCadastro_de_Acessorios"/>
     <addaction name="actionCadastro_de_Vidros"/>
@@ -308,6 +309,11 @@
   <action name="actionSobre">
    <property name="text">
     <string>Sobre...</string>
+   </property>
+  </action>
+  <action name="actionCadastro_de_Vendedores">
+   <property name="text">
+    <string>Cadastro de Vendedores</string>
    </property>
   </action>
  </widget>
