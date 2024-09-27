@@ -15,7 +15,7 @@ class Ui_tela_cadastro_vendedor(object):
     def setupUi(self, tela_cadastro_vendedor):
         tela_cadastro_vendedor.setObjectName("tela_cadastro_vendedor")
         tela_cadastro_vendedor.setEnabled(True)
-        tela_cadastro_vendedor.resize(680, 250)
+        tela_cadastro_vendedor.resize(680, 240)
         tela_cadastro_vendedor.setMinimumSize(QtCore.QSize(400, 200))
         self.centralwidget = QtWidgets.QWidget(tela_cadastro_vendedor)
         self.centralwidget.setObjectName("centralwidget")
@@ -24,7 +24,7 @@ class Ui_tela_cadastro_vendedor(object):
         self.pushButton_editar.setGeometry(QtCore.QRect(100, 200, 75, 23))
         self.pushButton_editar.setObjectName("pushButton_editar")
         self.pushButton_salvar = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_salvar.setEnabled(False)
+        self.pushButton_salvar.setEnabled(True)
         self.pushButton_salvar.setGeometry(QtCore.QRect(10, 200, 75, 23))
         self.pushButton_salvar.setObjectName("pushButton_salvar")
         self.pushButton_cancelar = QtWidgets.QPushButton(self.centralwidget)
@@ -38,6 +38,7 @@ class Ui_tela_cadastro_vendedor(object):
         self.textEdit_observacoes.setObjectName("textEdit_observacoes")
         self.lineEdit_telefone_vendedor = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_telefone_vendedor.setGeometry(QtCore.QRect(290, 30, 90, 20))
+        self.lineEdit_telefone_vendedor.setFocusPolicy(QtCore.Qt.StrongFocus)
         self.lineEdit_telefone_vendedor.setText("")
         self.lineEdit_telefone_vendedor.setObjectName("lineEdit_telefone_vendedor")
         self.label_data = QtWidgets.QLabel(self.centralwidget)
@@ -74,11 +75,19 @@ class Ui_tela_cadastro_vendedor(object):
         self.label_bairro_vendedor.setObjectName("label_bairro_vendedor")
         self.lineEdit_nome_vendedor = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_nome_vendedor.setGeometry(QtCore.QRect(10, 30, 190, 20))
+        self.lineEdit_nome_vendedor.setTabletTracking(False)
+        self.lineEdit_nome_vendedor.setFocusPolicy(QtCore.Qt.StrongFocus)
         self.lineEdit_nome_vendedor.setText("")
+        self.lineEdit_nome_vendedor.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.lineEdit_nome_vendedor.setCursorPosition(0)
+        self.lineEdit_nome_vendedor.setDragEnabled(False)
         self.lineEdit_nome_vendedor.setObjectName("lineEdit_nome_vendedor")
         self.lineEdit_endereco_vendedor = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_endereco_vendedor.setGeometry(QtCore.QRect(10, 80, 190, 20))
+        self.lineEdit_endereco_vendedor.setTabletTracking(False)
+        self.lineEdit_endereco_vendedor.setFocusPolicy(QtCore.Qt.StrongFocus)
         self.lineEdit_endereco_vendedor.setText("")
+        self.lineEdit_endereco_vendedor.setCursorPosition(0)
         self.lineEdit_endereco_vendedor.setObjectName("lineEdit_endereco_vendedor")
         self.label_observacoes = QtWidgets.QLabel(self.centralwidget)
         self.label_observacoes.setGeometry(QtCore.QRect(10, 108, 71, 16))
@@ -101,10 +110,21 @@ class Ui_tela_cadastro_vendedor(object):
 
         self.retranslateUi(tela_cadastro_vendedor)
         QtCore.QMetaObject.connectSlotsByName(tela_cadastro_vendedor)
+        tela_cadastro_vendedor.setTabOrder(self.lineEdit_nome_vendedor, self.lineEdit_telefone_vendedor)
+        tela_cadastro_vendedor.setTabOrder(self.lineEdit_telefone_vendedor, self.lineEdit_endereco_vendedor)
+        tela_cadastro_vendedor.setTabOrder(self.lineEdit_endereco_vendedor, self.lineEdit_numero_vendedor)
+        tela_cadastro_vendedor.setTabOrder(self.lineEdit_numero_vendedor, self.lineEdit_bairro_vendedor)
+        tela_cadastro_vendedor.setTabOrder(self.lineEdit_bairro_vendedor, self.lineEdit_cidade_vendedor)
+        tela_cadastro_vendedor.setTabOrder(self.lineEdit_cidade_vendedor, self.textEdit_observacoes)
+        tela_cadastro_vendedor.setTabOrder(self.textEdit_observacoes, self.pushButton_salvar)
+        tela_cadastro_vendedor.setTabOrder(self.pushButton_salvar, self.pushButton_editar)
+        tela_cadastro_vendedor.setTabOrder(self.pushButton_editar, self.pushButton_cancelar)
+        tela_cadastro_vendedor.setTabOrder(self.pushButton_cancelar, self.lineEdit_data)
+        tela_cadastro_vendedor.setTabOrder(self.lineEdit_data, self.pushButton_novo)
 
     def retranslateUi(self, tela_cadastro_vendedor):
         _translate = QtCore.QCoreApplication.translate
-        tela_cadastro_vendedor.setWindowTitle(_translate("tela_cadastro_vendedor", "Cadastro de Clientes"))
+        tela_cadastro_vendedor.setWindowTitle(_translate("tela_cadastro_vendedor", "Cadastro de Vendedores"))
         self.pushButton_editar.setText(_translate("tela_cadastro_vendedor", "Editar"))
         self.pushButton_salvar.setText(_translate("tela_cadastro_vendedor", "Salvar"))
         self.pushButton_cancelar.setText(_translate("tela_cadastro_vendedor", "Cancelar"))
@@ -128,11 +148,11 @@ class Ui_tela_cadastro_vendedor(object):
         self.lineEdit_numero_vendedor.setToolTip(_translate("tela_cadastro_vendedor", "Numero da Obra"))
 
 
-# if __name__ == "__main__":
-#     import sys
-#     app = QtWidgets.QApplication(sys.argv)
-#     tela_cadastro_vendedor = QtWidgets.QMainWindow()
-#     ui = Ui_tela_cadastro_vendedor()
-#     ui.setupUi(tela_cadastro_vendedor)
-#     tela_cadastro_vendedor.show()
-#     sys.exit(app.exec_())
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    tela_cadastro_vendedor = QtWidgets.QMainWindow()
+    ui = Ui_tela_cadastro_vendedor()
+    ui.setupUi(tela_cadastro_vendedor)
+    tela_cadastro_vendedor.show()
+    sys.exit(app.exec_())

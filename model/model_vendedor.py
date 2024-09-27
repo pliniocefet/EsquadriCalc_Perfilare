@@ -14,13 +14,19 @@ class ModelVendedor():
         self.cursor.execute("""CREATE TABLE IF NOT EXISTS vendedores (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             nome TEXT NOT NULL,
-            telefone TEXT NOT NULL)""")
+            telefone TEXT NOT NULL,
+            endereco TEXT,
+            numero TEXT,
+            bairro TEXT,
+            cidade TEXT,
+            observacoes TEXT,
+            data_cadastro TEXT)""")
 
         self.connection.commit()
         self.connection.close()
         
     
-    def insert_vendedor(self, nome, telefone):
+    def insert_vendedor(self, nome, telefone, endereco, numero, bairro, cidade, observacoes):
         self.connection = sqlite3.connect("esquadriaDB.db")
         
         try:
@@ -29,7 +35,12 @@ class ModelVendedor():
             self.cursor.execute("""
                                 INSERT INTO vendedores (
                                     nome,
-                                    telefone) VALUES (?,?)""", (nome, telefone))
+                                    telefone,
+                                    endereco,
+                                    numero,
+                                    bairro,
+                                    cidade,
+                                    observacoes) VALUES (?,?,?,?,?,?,?)""", (nome, telefone, endereco, numero, bairro, cidade, observacoes))
             
             self.connection.commit()
             print("Registro inserido com sucesso!")

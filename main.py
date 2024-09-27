@@ -32,8 +32,7 @@ class Main(QMainWindow):
         usuario = self.ui.lineEdit_user.text()
         senha = self.ui.lineEdit_password.text()
 
-        # TODO
-        # implementar save_check
+        # TODO implementar save_check
         save_check = self.ui.checkBox_save_user.checkState()
 
         if self.model_login.event_bt_login(usuario, senha):

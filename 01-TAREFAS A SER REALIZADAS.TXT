@@ -1,10 +1,10 @@
 
 
-TODO IMPLEMENTAR O MODULO controle_cadastro_vendedor
-
-TODO CRIAR EM controle_novo_orcamento UM METODO PARA ALIMENTAR O COMBOBOX DE VENDEDORES
-
 TODO CRIAR EM model_cliente O METODO update_cliente() PARA PODER ALTERAR CLIENTES E SALVAR NO BANCO AS ALTERAÇÕES
 
 TODO CRIAR EM model_vendedor O METODO update_vendedor() PARA PODER ALTERAR VENDEDORES E SALVAR NO BANCO AS ALTERAÇÕES
+
+TODO criar uma verificação em controle_novo_orcamento para não deixar salvar clientes em branco ou sem nome e telefone ao menos
+
+TODO Criar uma verificação em controle_cadastro_vendedor para não deixar salvar vendedores em branco ou sem nome e telefone ao menos
 

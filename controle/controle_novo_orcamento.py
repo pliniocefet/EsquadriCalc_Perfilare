@@ -54,10 +54,10 @@ class ControleNovoOrcamento(QMainWindow):
         self.novo_orcamento.lineEdit_cidade_cliente.clear()
         self.novo_orcamento.lineEdit_telefone_cliente.clear()
         self.novo_orcamento.textEdit_observacoes.clear()
+        self.novo_orcamento.pushButton_salvar_cliente.setEnabled(True)
         self.close()
 
     def salvar_cliente(self):
-        self.modelCliente = ModelCliente()
         nome_cliente = self.novo_orcamento.lineEdit_nome_cliente.text()
         endereco_cliente = self.novo_orcamento.lineEdit_endereco_cliente.text()
         numero_cliente = self.novo_orcamento.lineEdit_numero_cliente.text()
@@ -65,24 +65,27 @@ class ControleNovoOrcamento(QMainWindow):
         cidade_cliente = self.novo_orcamento.lineEdit_cidade_cliente.text()
         telefone_cliente = self.novo_orcamento.lineEdit_telefone_cliente.text()
         observacoes_cliente = self.novo_orcamento.textEdit_observacoes.toPlainText()
+        
+#       TODO FAZER UMA VERIFICAÇÃO PARA NÃO SALVAR CLIENTES EM BRANCO
 
+
+        self.modelCliente = ModelCliente()
         self.modelCliente.insert_cliente(nome_cliente, endereco_cliente, numero_cliente,
                                          bairro_cliente, cidade_cliente, telefone_cliente, observacoes_cliente)
         
-        self.menssagem()
+        self.menssagem('Cadastro Realizado com Sucesso!')
         self.novo_orcamento.pushButton_salvar_cliente.setEnabled(False)
         self.novo_orcamento.pushButton_editar_cliente.setEnabled(True)
-        
         
     def editar_cliente(self):
         self.novo_orcamento.pushButton_salvar_cliente.setEnabled(True)
         self.novo_orcamento.pushButton_editar_cliente.setEnabled(False)
         
     ### MESSAGEBOX ###
-    def menssagem(self):    
+    def menssagem(self, menssagem):    
         self.msg_box = QMessageBox()
         self.msg_box.setWindowTitle('Information')
-        self.msg_box.setText('Cadastro Realizado com Sucesso')
+        self.msg_box.setText(menssagem)
         self.msg_box.setIcon(QMessageBox.Information)
         self.msg_box.setStandardButtons(QMessageBox.Ok)
         self.msg_box.exec_()
