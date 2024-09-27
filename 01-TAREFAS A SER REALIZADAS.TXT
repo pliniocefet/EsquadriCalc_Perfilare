@@ -8,3 +8,4 @@ TODO criar uma verificação em controle_novo_orcamento para não deixar salvar 
 
 TODO Criar uma verificação em controle_cadastro_vendedor para não deixar salvar vendedores em branco ou sem nome e telefone ao menos
 
+TODO botão salvar de tela_novo_orcamento tem que salvar também o vendedor vinculado ao cliente

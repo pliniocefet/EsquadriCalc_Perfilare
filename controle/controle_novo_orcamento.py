@@ -32,8 +32,14 @@ class ControleNovoOrcamento(QMainWindow):
         self.novo_orcamento.pushButton_salvar_cliente.clicked.connect(
             self.salvar_cliente)
         self.novo_orcamento.pushButton_editar_cliente.clicked.connect(self.editar_cliente)
-
-    
+        
+        ### Condição de funcionamento dos botões
+        if self.novo_orcamento.lineEdit_nome_cliente.text() == "":
+            self.novo_orcamento.pushButton_incluir_produto.setEnabled(False)
+        else:
+            self.novo_orcamento.pushButton_incluir_produto.setEnabled(True)
+            
+            
     def preenche_combo_vendedores(self):
         self.vendedor = ModelVendedor()
         self.combo_vendedores = self.vendedor.list_vendedores()
@@ -76,6 +82,7 @@ class ControleNovoOrcamento(QMainWindow):
         self.menssagem('Cadastro Realizado com Sucesso!')
         self.novo_orcamento.pushButton_salvar_cliente.setEnabled(False)
         self.novo_orcamento.pushButton_editar_cliente.setEnabled(True)
+        self.novo_orcamento.pushButton_incluir_produto.setEnabled(True)
         
     def editar_cliente(self):
         self.novo_orcamento.pushButton_salvar_cliente.setEnabled(True)

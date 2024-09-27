@@ -14,9 +14,14 @@ class ControleBuscarCliente(QMainWindow):
         # preecher a tabela de clientes ao abrir a tela
         self.preenche_tabela()
         
+        ### AÇÕES DE BOTÕES E TABELA
+        # captura informações da tabela de acordo com o item clicado
+        self.tela_buscar_cliente.tableWidget_clientes.itemClicked.connect(self.captura_cliente)
+        
         self.tela_buscar_cliente.pushButton_fechar.clicked.connect(self.bt_fechar)
         self.tela_buscar_cliente.pushButton_buscar_cliente.clicked.connect(self.bt_buscar)
         self.tela_buscar_cliente.pushButton_inserir_cliente.clicked.connect(self.bt_inserir)
+        
     
     def bt_fechar(self):
         self.close()
@@ -29,6 +34,23 @@ class ControleBuscarCliente(QMainWindow):
     def bt_inserir(self):
         pass
     
+    
+    def captura_cliente(self, item):
+        row = item.row()
+        row_itens = []
+        
+        
+        for col in range(self.tela_buscar_cliente.tableWidget_clientes.colorCount()):
+            item = self.tela_buscar_cliente.tableWidget_clientes.item(row, col)
+            
+            if item is not None:
+                row_itens.append(item.text())
+                
+            else:
+                row_itens.append("")
+                
+        print(row_itens[1])
+        self.close()
     
     def preenche_tabela(self):
         self.model_cliente = ModelCliente()
