@@ -55,8 +55,9 @@ class ModelCliente():
     
     
     def update_cliente(self, id, nome, endereco, numero, bairro, cidade, telefone, observacoes):
-        pass
-    
+        self.connection = sqlite3.connect("esquadriaDB.db")
+        self.cursor = self.connection.cursor()
+        
     
     def delete_cliente(self, id):
         self.connection = sqlite3.connect("esquadriaDB.db")
@@ -89,13 +90,15 @@ class ModelCliente():
         return self.return_query
     
     
-    def find_cliente(self, cliente):
+    def find_cliente(self, nome_cliente):
         self.connection = sqlite3.connect("esquadriaDB.db")
         self.cursor = self.connection.cursor()
         
-        self.cursor.execute("""SELECT * FROM clientes WHERE cliente=?""", cliente)
+        self.cursor.execute("""SELECT nome FROM clientes WHERE nome=?""", (nome_cliente,))
         
         self.return_query = self.cursor.fetchone()
+        
+        print("Registro encontrado com sucesso")
         
         return self.return_query
         

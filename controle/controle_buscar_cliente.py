@@ -49,7 +49,9 @@ class ControleBuscarCliente(QMainWindow):
             else:
                 row_itens.append("")
                 
-        print(row_itens[1])
+        self.model_cliente  = ModelCliente()
+        result = self.model_cliente.find_cliente(row_itens[1])
+        print(result)
         self.close()
     
     def preenche_tabela(self):
