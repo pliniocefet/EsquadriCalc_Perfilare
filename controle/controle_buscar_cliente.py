@@ -39,7 +39,6 @@ class ControleBuscarCliente(QMainWindow):
         row = item.row()
         row_itens = []
         
-        
         for col in range(self.tela_buscar_cliente.tableWidget_clientes.colorCount()):
             item = self.tela_buscar_cliente.tableWidget_clientes.item(row, col)
             
@@ -49,10 +48,9 @@ class ControleBuscarCliente(QMainWindow):
             else:
                 row_itens.append("")
                 
-        self.model_cliente  = ModelCliente()
-        result = self.model_cliente.find_cliente(row_itens[1])
-        print(result)
-        self.close()
+        return print(row_itens[1])
+        
+        
     
     def preenche_tabela(self):
         self.model_cliente = ModelCliente()
