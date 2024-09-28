@@ -1,6 +1,7 @@
 from PyQt5.QtWidgets import QMainWindow, QTableWidgetItem
 from view.tela_buscar_cliente import Ui_MainWindow_buscar_cliente
 from model.model_cliente import ModelCliente
+from view.tela_novo_orcamento import Ui_tela_novo_orcamento
 
 
 
@@ -10,6 +11,10 @@ class ControleBuscarCliente(QMainWindow):
         super().__init__()
         self.tela_buscar_cliente = Ui_MainWindow_buscar_cliente()
         self.tela_buscar_cliente.setupUi(self)
+        
+        #TODO: encontrar uma forma de capturar o cliente da tela_buscar_cliente para trazer para a tela_novo_orcamento
+        #self.novo_orcamento = Ui_tela_novo_orcamento()
+        
         
         # preecher a tabela de clientes ao abrir a tela
         self.preenche_tabela()
@@ -48,8 +53,15 @@ class ControleBuscarCliente(QMainWindow):
             else:
                 row_itens.append("")
                 
-        return print(row_itens[1])
-        
+        # self.novo_orcamento.lineEdit_nome_cliente.setText(row_itens[1])
+        # self.novo_orcamento.lineEdit_endereco_cliente.setText(row_itens[2])
+        # self.novo_orcamento.lineEdit_numero_cliente.setText(row_itens[3])
+        # self.novo_orcamento.lineEdit_bairro_cliente.setText(row_itens[4])
+        # self.novo_orcamento.lineEdit_cidade_cliente.setText(row_itens[5])
+        # self.novo_orcamento.lineEdit_telefone_cliente.setText(row_itens[6])
+        # self.novo_orcamento.textEdit_observacoes.toPlainText(row_itens[7])
+        # self.novo_orcamento.pushButton_salvar_cliente.setEnabled(False)
+        # self.novo_orcamento.pushButton_editar_cliente.setEnabled(True)
         
     
     def preenche_tabela(self):

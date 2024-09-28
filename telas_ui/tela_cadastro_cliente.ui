@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>680</width>
-    <height>250</height>
+    <width>666</width>
+    <height>238</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -23,22 +23,6 @@
    <string>Cadastro de Clientes</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton_editar">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>200</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Editar</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton_salvar">
     <property name="enabled">
      <bool>false</bool>
@@ -58,7 +42,7 @@
    <widget class="QPushButton" name="pushButton_cancelar">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>580</x>
       <y>200</y>
       <width>75</width>
       <height>23</height>
@@ -71,7 +55,7 @@
    <widget class="QPushButton" name="pushButton_novo">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>190</x>
       <y>200</y>
       <width>75</width>
       <height>23</height>
@@ -82,6 +66,9 @@
     </property>
    </widget>
    <widget class="QTextEdit" name="textEdit_observacoes">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -95,6 +82,9 @@
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_telefone_cliente">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>290</x>
@@ -127,6 +117,9 @@
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_bairro_cliente">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -182,6 +175,9 @@
     </property>
    </widget>
    <widget class="QComboBox" name="comboBox_vendedores">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -199,46 +195,6 @@
     <item>
      <property name="text">
       <string>Selecione o vendedor</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>André</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Joaquim</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Jefferson</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Thais</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Merlim</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Plinio</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Natanael</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Wagner</string>
      </property>
     </item>
    </widget>
@@ -304,26 +260,10 @@
      <string>Bairro:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_buscar_telefone_cliente">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>28</y>
-      <width>51</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string>Localizar Cliente</string>
-    </property>
-    <property name="autoFillBackground">
+   <widget class="QLineEdit" name="lineEdit_nome_cliente">
+    <property name="enabled">
      <bool>false</bool>
     </property>
-    <property name="text">
-     <string>Buscar</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_nome_cliente">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -340,6 +280,9 @@
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_endereco_cliente">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -382,6 +325,9 @@
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_cidade_cliente">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -424,6 +370,9 @@
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_numero_cliente">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -439,8 +388,67 @@
      <string/>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_anterior">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>200</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Anterior</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_proximo">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>200</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Proximo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_editar">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>200</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Editar</string>
+    </property>
+   </widget>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit_nome_cliente</tabstop>
+  <tabstop>lineEdit_telefone_cliente</tabstop>
+  <tabstop>lineEdit_endereco_cliente</tabstop>
+  <tabstop>lineEdit_numero_cliente</tabstop>
+  <tabstop>lineEdit_bairro_cliente</tabstop>
+  <tabstop>lineEdit_cidade_cliente</tabstop>
+  <tabstop>textEdit_observacoes</tabstop>
+  <tabstop>comboBox_vendedores</tabstop>
+  <tabstop>pushButton_salvar</tabstop>
+  <tabstop>pushButton_editar</tabstop>
+  <tabstop>pushButton_novo</tabstop>
+  <tabstop>pushButton_anterior</tabstop>
+  <tabstop>pushButton_proximo</tabstop>
+  <tabstop>pushButton_cancelar</tabstop>
+  <tabstop>lineEdit_data</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
