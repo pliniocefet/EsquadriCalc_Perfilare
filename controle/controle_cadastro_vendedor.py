@@ -15,9 +15,21 @@ class ControleCadastroVendedor(QMainWindow):
         
         self.tela_cadastro_vendedores.pushButton_cancelar.clicked.connect(self.bt_cancelar)
         self.tela_cadastro_vendedores.pushButton_salvar.clicked.connect(self.bt_salvar)
+        self.tela_cadastro_vendedores.pushButton_novo.clicked.connect(self.bt_novo)
         
         self.limpar_campos()
         
+    
+    def bt_novo(self):
+        self.tela_cadastro_vendedores.lineEdit_nome_vendedor.setEnabled(True)
+        self.tela_cadastro_vendedores.lineEdit_endereco_vendedor.setEnabled(True)
+        self.tela_cadastro_vendedores.lineEdit_bairro_vendedor.setEnabled(True)
+        self.tela_cadastro_vendedores.lineEdit_cidade_vendedor.setEnabled(True)
+        self.tela_cadastro_vendedores.lineEdit_numero_vendedor.setEnabled(True)
+        self.tela_cadastro_vendedores.lineEdit_telefone_vendedor.setEnabled(True)
+        self.tela_cadastro_vendedores.textEdit_observacoes.setEnabled(True)
+        self.tela_cadastro_vendedores.pushButton_salvar.setEnabled(True)
+    
     
     def limpar_campos(self):
         self.tela_cadastro_vendedores.lineEdit_nome_vendedor.clear()
@@ -26,9 +38,17 @@ class ControleCadastroVendedor(QMainWindow):
         self.tela_cadastro_vendedores.lineEdit_cidade_vendedor.clear()
         self.tela_cadastro_vendedores.lineEdit_numero_vendedor.clear()
         self.tela_cadastro_vendedores.lineEdit_telefone_vendedor.clear()
+        self.tela_cadastro_vendedores.textEdit_observacoes.clear()
     
     def bt_cancelar(self):
         self.limpar_campos()
+        self.tela_cadastro_vendedores.lineEdit_nome_vendedor.setEnabled(False)
+        self.tela_cadastro_vendedores.lineEdit_endereco_vendedor.setEnabled(False)
+        self.tela_cadastro_vendedores.lineEdit_bairro_vendedor.setEnabled(False)
+        self.tela_cadastro_vendedores.lineEdit_cidade_vendedor.setEnabled(False)
+        self.tela_cadastro_vendedores.lineEdit_numero_vendedor.setEnabled(False)
+        self.tela_cadastro_vendedores.lineEdit_telefone_vendedor.setEnabled(False)
+        self.tela_cadastro_vendedores.textEdit_observacoes.setEnabled(False)
         self.close()
         
     def bt_salvar(self):
@@ -45,8 +65,19 @@ class ControleCadastroVendedor(QMainWindow):
         # TODO Verificar como salvar a data do cadastro de vendedores pegando a data atual do computador
         
         self.model_vendedor = ModelVendedor()
-        if nome and telefone != "":
+        if nome and telefone:
             self.model_vendedor.insert_vendedor(nome, telefone, endereco, numero, bairro, cidade, observacoes)
+            
+            self.tela_cadastro_vendedores.pushButton_salvar.setEnabled(False)
+            self.tela_cadastro_vendedores.pushButton_novo.setEnabled(True)
+            self.tela_cadastro_vendedores.lineEdit_nome_vendedor.setEnabled(False)
+            self.tela_cadastro_vendedores.lineEdit_telefone_vendedor.setEnabled(False)
+            self.tela_cadastro_vendedores.lineEdit_endereco_vendedor.setEnabled(False)
+            self.tela_cadastro_vendedores.lineEdit_numero_vendedor.setEnabled(False)
+            self.tela_cadastro_vendedores.lineEdit_cidade_vendedor.setEnabled(False)
+            self.tela_cadastro_vendedores.lineEdit_bairro_vendedor.setEnabled(False)
+            self.tela_cadastro_vendedores.textEdit_observacoes.setEnabled(False)
+            
             self.limpar_campos()
             self.menssagem("Cadastro Realizado com Sucesso!")
         else:

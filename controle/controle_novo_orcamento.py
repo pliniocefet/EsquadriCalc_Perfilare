@@ -22,8 +22,8 @@ class ControleNovoOrcamento(QMainWindow):
         ### ESTADO DOS BOTÕES ###
         self.novo_orcamento.pushButton_editar_cliente.setEnabled(False)
         
-        ### PREENCHE O COMBOBOX DE VENDEDORES ###
         self.preenche_combo_vendedores()
+        
 
         ### AÇÕES DOS BOTÕES ###
         self.novo_orcamento.pushButton_buscar_cliente.clicked.connect(
@@ -108,6 +108,8 @@ class ControleNovoOrcamento(QMainWindow):
         self.novo_orcamento.lineEdit_bairro_cliente.setEnabled(True)
         self.novo_orcamento.lineEdit_cidade_cliente.setEnabled(True)
         self.novo_orcamento.textEdit_observacoes.setEnabled(True)
+        # self.novo_orcamento.comboBox_vendedores.setEnabled(True)
+        
         
     ### MESSAGEBOX ###
     def menssagem(self, menssagem):    

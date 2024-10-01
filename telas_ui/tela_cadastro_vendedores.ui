@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>680</width>
+    <width>668</width>
     <height>240</height>
    </rect>
   </property>
@@ -41,7 +41,7 @@
    </widget>
    <widget class="QPushButton" name="pushButton_salvar">
     <property name="enabled">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -58,7 +58,7 @@
    <widget class="QPushButton" name="pushButton_cancelar">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>580</x>
       <y>200</y>
       <width>75</width>
       <height>23</height>
@@ -71,7 +71,7 @@
    <widget class="QPushButton" name="pushButton_novo">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>190</x>
       <y>200</y>
       <width>75</width>
       <height>23</height>
@@ -82,6 +82,9 @@
     </property>
    </widget>
    <widget class="QTextEdit" name="textEdit_observacoes">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -95,6 +98,9 @@
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_telefone_vendedor">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>290</x>
@@ -130,6 +136,9 @@
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_bairro_vendedor">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -247,6 +256,9 @@
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_nome_vendedor">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -278,6 +290,9 @@
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_endereco_vendedor">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -329,6 +344,9 @@
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_cidade_vendedor">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -358,6 +376,9 @@
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_numero_vendedor">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -371,6 +392,32 @@
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_proximo">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>200</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Proximo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_anterior">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>200</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Anterior</string>
     </property>
    </widget>
   </widget>
