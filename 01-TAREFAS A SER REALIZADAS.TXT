@@ -4,8 +4,10 @@ TODO CRIAR EM model_cliente O METODO update_cliente() PARA PODER ALTERAR CLIENTE
 
 TODO CRIAR EM model_vendedor O METODO update_vendedor() PARA PODER ALTERAR VENDEDORES E SALVAR NO BANCO AS ALTERAÇÕES
 
-TODO criar uma verificação em controle_novo_orcamento para não deixar salvar clientes em branco ou sem nome e telefone ao menos
-
-TODO Criar uma verificação em controle_cadastro_vendedor para não deixar salvar vendedores em branco ou sem nome e telefone ao menos
-
 TODO botão salvar de tela_novo_orcamento tem que salvar também o vendedor vinculado ao cliente
+
+TODO Preencher a lista de produtos em tela_novo_orcamento assim que o cliente for preenchido
+
+TODO cadastrar os produtos no banco de dados
+
+TODO Programar o botão buscar em controle_buscar_cliente 

@@ -1,4 +1,4 @@
-# TODO criar este modulo
+
 
 from PyQt5.QtWidgets import QMainWindow, QMessageBox
 from view.tela_cadastro_vendedores import Ui_tela_cadastro_vendedor

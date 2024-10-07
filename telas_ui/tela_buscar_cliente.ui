@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow_buscar_cliente</class>
- <widget class="QMainWindow" name="MainWindow_buscar_cliente">
+ <class>Dialog_buscar_cliente</class>
+ <widget class="QDialog" name="Dialog_buscar_cliente">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,126 +11,124 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Buscar Cliente</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="lineEdit_nome_cliente">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>401</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_nome_cliente">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>111</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
+  <widget class="QPushButton" name="pushButton_fechar">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>280</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Fechar</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_clientes">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>711</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
     <property name="text">
-     <string>Nome do Cliente:</string>
+     <string>Id</string>
     </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_buscar_cliente">
-    <property name="geometry">
-     <rect>
-      <x>440</x>
-      <y>30</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
+   </column>
+   <column>
     <property name="text">
-     <string>Buscar</string>
+     <string>Nome</string>
     </property>
-   </widget>
-   <widget class="QTableWidget" name="tableWidget_clientes">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>70</y>
-      <width>711</width>
-      <height>192</height>
-     </rect>
-    </property>
-    <column>
-     <property name="text">
-      <string>Id</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Nome</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Endereço</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Número</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Bairro</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Cidade</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Telefone</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Observaçoes</string>
-     </property>
-    </column>
-   </widget>
-   <widget class="QPushButton" name="pushButton_inserir_cliente">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>280</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
+   </column>
+   <column>
     <property name="text">
-     <string>Inserir</string>
+     <string>Endereço</string>
     </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_fechar">
-    <property name="geometry">
-     <rect>
-      <x>660</x>
-      <y>280</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
+   </column>
+   <column>
     <property name="text">
-     <string>Fechar</string>
+     <string>Número</string>
     </property>
-   </widget>
+   </column>
+   <column>
+    <property name="text">
+     <string>Bairro</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Cidade</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Telefone</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Observaçoes</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_nome_cliente">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>401</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_inserir_cliente">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Inserir</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_buscar_cliente">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>30</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Buscar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_nome_cliente">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Nome do Cliente:</string>
+   </property>
   </widget>
  </widget>
  <resources/>

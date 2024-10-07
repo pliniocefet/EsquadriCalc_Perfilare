@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'tela_buscar_cliente.ui'
+# Form implementation generated from reading ui file 'qtela_buscar_cliente.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -9,39 +9,19 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QHeaderView
 
 
-class Ui_MainWindow_buscar_cliente(object):
-    def setupUi(self, MainWindow_buscar_cliente):
-        MainWindow_buscar_cliente.setObjectName("MainWindow_buscar_cliente")
-        MainWindow_buscar_cliente.resize(757, 315)
-        self.centralwidget = QtWidgets.QWidget(MainWindow_buscar_cliente)
-        self.centralwidget.setObjectName("centralwidget")
-        self.lineEdit_nome_cliente = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_nome_cliente.setGeometry(QtCore.QRect(20, 30, 401, 20))
-        self.lineEdit_nome_cliente.setObjectName("lineEdit_nome_cliente")
-        self.label_nome_cliente = QtWidgets.QLabel(self.centralwidget)
-        self.label_nome_cliente.setGeometry(QtCore.QRect(20, 10, 111, 16))
-        font = QtGui.QFont()
-        font.setPointSize(10)
-        self.label_nome_cliente.setFont(font)
-        self.label_nome_cliente.setObjectName("label_nome_cliente")
-        self.pushButton_buscar_cliente = QtWidgets.QPushButton(
-            self.centralwidget)
-        self.pushButton_buscar_cliente.setGeometry(
-            QtCore.QRect(440, 30, 75, 23))
-        self.pushButton_buscar_cliente.setObjectName(
-            "pushButton_buscar_cliente")
-        self.tableWidget_clientes = QtWidgets.QTableWidget(self.centralwidget)
-        self.tableWidget_clientes.setGeometry(QtCore.QRect(20, 70, 711, 192))
+class Ui_Dialog_buscar_cliente(object):
+    def setupUi(self, Dialog_buscar_cliente):
+        Dialog_buscar_cliente.setObjectName("Dialog_buscar_cliente")
+        Dialog_buscar_cliente.resize(757, 315)
+        self.pushButton_fechar = QtWidgets.QPushButton(Dialog_buscar_cliente)
+        self.pushButton_fechar.setGeometry(QtCore.QRect(650, 280, 75, 23))
+        self.pushButton_fechar.setObjectName("pushButton_fechar")
+        self.tableWidget_clientes = QtWidgets.QTableWidget(Dialog_buscar_cliente)
+        self.tableWidget_clientes.setGeometry(QtCore.QRect(10, 70, 711, 192))
         self.tableWidget_clientes.setObjectName("tableWidget_clientes")
         self.tableWidget_clientes.setColumnCount(8)
-        
-        # redimensiona as colunas de acordo com o conteudo da tabela
-        header = self.tableWidget_clientes.horizontalHeader()
-        header.setSectionResizeMode(QHeaderView.ResizeToContents)
-        
         self.tableWidget_clientes.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget_clientes.setHorizontalHeaderItem(0, item)
@@ -59,55 +39,55 @@ class Ui_MainWindow_buscar_cliente(object):
         self.tableWidget_clientes.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget_clientes.setHorizontalHeaderItem(7, item)
-        self.pushButton_inserir_cliente = QtWidgets.QPushButton(
-            self.centralwidget)
-        self.pushButton_inserir_cliente.setGeometry(
-            QtCore.QRect(20, 280, 75, 23))
-        self.pushButton_inserir_cliente.setObjectName(
-            "pushButton_inserir_cliente")
-        self.pushButton_fechar = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_fechar.setGeometry(QtCore.QRect(660, 280, 75, 23))
-        self.pushButton_fechar.setObjectName("pushButton_fechar")
-        MainWindow_buscar_cliente.setCentralWidget(self.centralwidget)
+        self.lineEdit_nome_cliente = QtWidgets.QLineEdit(Dialog_buscar_cliente)
+        self.lineEdit_nome_cliente.setGeometry(QtCore.QRect(10, 30, 401, 20))
+        self.lineEdit_nome_cliente.setObjectName("lineEdit_nome_cliente")
+        self.pushButton_inserir_cliente = QtWidgets.QPushButton(Dialog_buscar_cliente)
+        self.pushButton_inserir_cliente.setGeometry(QtCore.QRect(10, 280, 75, 23))
+        self.pushButton_inserir_cliente.setObjectName("pushButton_inserir_cliente")
+        self.pushButton_buscar_cliente = QtWidgets.QPushButton(Dialog_buscar_cliente)
+        self.pushButton_buscar_cliente.setGeometry(QtCore.QRect(430, 30, 75, 23))
+        self.pushButton_buscar_cliente.setObjectName("pushButton_buscar_cliente")
+        self.label_nome_cliente = QtWidgets.QLabel(Dialog_buscar_cliente)
+        self.label_nome_cliente.setGeometry(QtCore.QRect(10, 10, 111, 16))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_nome_cliente.setFont(font)
+        self.label_nome_cliente.setObjectName("label_nome_cliente")
 
-        self.retranslateUi(MainWindow_buscar_cliente)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow_buscar_cliente)
+        self.retranslateUi(Dialog_buscar_cliente)
+        QtCore.QMetaObject.connectSlotsByName(Dialog_buscar_cliente)
 
-    def retranslateUi(self, MainWindow_buscar_cliente):
+    def retranslateUi(self, Dialog_buscar_cliente):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow_buscar_cliente.setWindowTitle(
-            _translate("MainWindow_buscar_cliente", "MainWindow"))
-        self.label_nome_cliente.setText(_translate(
-            "MainWindow_buscar_cliente", "Nome do Cliente:"))
-        self.pushButton_buscar_cliente.setText(
-            _translate("MainWindow_buscar_cliente", "Buscar"))
+        Dialog_buscar_cliente.setWindowTitle(_translate("Dialog_buscar_cliente", "Buscar Cliente"))
+        self.pushButton_fechar.setText(_translate("Dialog_buscar_cliente", "Fechar"))
         item = self.tableWidget_clientes.horizontalHeaderItem(0)
-        item.setText(_translate("MainWindow_buscar_cliente", "Id"))
+        item.setText(_translate("Dialog_buscar_cliente", "Id"))
         item = self.tableWidget_clientes.horizontalHeaderItem(1)
-        item.setText(_translate("MainWindow_buscar_cliente", "Nome"))
+        item.setText(_translate("Dialog_buscar_cliente", "Nome"))
         item = self.tableWidget_clientes.horizontalHeaderItem(2)
-        item.setText(_translate("MainWindow_buscar_cliente", "Endereço"))
+        item.setText(_translate("Dialog_buscar_cliente", "Endereço"))
         item = self.tableWidget_clientes.horizontalHeaderItem(3)
-        item.setText(_translate("MainWindow_buscar_cliente", "Número"))
+        item.setText(_translate("Dialog_buscar_cliente", "Número"))
         item = self.tableWidget_clientes.horizontalHeaderItem(4)
-        item.setText(_translate("MainWindow_buscar_cliente", "Bairro"))
+        item.setText(_translate("Dialog_buscar_cliente", "Bairro"))
         item = self.tableWidget_clientes.horizontalHeaderItem(5)
-        item.setText(_translate("MainWindow_buscar_cliente", "Cidade"))
+        item.setText(_translate("Dialog_buscar_cliente", "Cidade"))
         item = self.tableWidget_clientes.horizontalHeaderItem(6)
-        item.setText(_translate("MainWindow_buscar_cliente", "Telefone"))
+        item.setText(_translate("Dialog_buscar_cliente", "Telefone"))
         item = self.tableWidget_clientes.horizontalHeaderItem(7)
-        item.setText(_translate("MainWindow_buscar_cliente", "Observaçoes"))
-        self.pushButton_inserir_cliente.setText(
-            _translate("MainWindow_buscar_cliente", "Inserir"))
-        self.pushButton_fechar.setText(_translate(
-            "MainWindow_buscar_cliente", "Fechar"))
+        item.setText(_translate("Dialog_buscar_cliente", "Observaçoes"))
+        self.pushButton_inserir_cliente.setText(_translate("Dialog_buscar_cliente", "Inserir"))
+        self.pushButton_buscar_cliente.setText(_translate("Dialog_buscar_cliente", "Buscar"))
+        self.label_nome_cliente.setText(_translate("Dialog_buscar_cliente", "Nome do Cliente:"))
 
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow_buscar_cliente = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow_buscar_cliente()
-    ui.setupUi(MainWindow_buscar_cliente)
-    MainWindow_buscar_cliente.show()
-    sys.exit(app.exec_())
+# if __name__ == "__main__":
+#     import sys
+#     app = QtWidgets.QApplication(sys.argv)
+#     Dialog_buscar_cliente = QtWidgets.QDialog()
+#     ui = Ui_Dialog_buscar_cliente()
+#     ui.setupUi(Dialog_buscar_cliente)
+#     Dialog_buscar_cliente.show()
+#     sys.exit(app.exec_())

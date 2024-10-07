@@ -10,6 +10,18 @@
     <height>591</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>995</width>
+    <height>591</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>995</width>
+    <height>591</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Novo Orçamento</string>
   </property>
@@ -540,22 +552,22 @@
     </item>
     <item row="0" column="2">
      <property name="text">
-      <string>Branco</string>
+      <string/>
      </property>
     </item>
     <item row="0" column="3">
      <property name="text">
-      <string>Sem grade</string>
+      <string/>
      </property>
     </item>
     <item row="1" column="2">
      <property name="text">
-      <string>Preto</string>
+      <string/>
      </property>
     </item>
     <item row="1" column="3">
      <property name="text">
-      <string>Com grade</string>
+      <string/>
      </property>
     </item>
    </widget>
@@ -599,6 +611,9 @@
       <width>301</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Selecione o Produto</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_excluir_produto">
